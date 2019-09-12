@@ -1,0 +1,173 @@
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-right: 40px;
+    margin-left: 40px;
+    width: auto;
+}
+
+header {
+    width: 100%;
+    order: 1;
+    max-height: 120px;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3px;
+    border-bottom: 3px solid #7d97ad;
+    margin-left: 10%;
+}
+
+aside {
+    width: 10%;
+    height: auto;
+    order: 2;
+}
+
+.sidebar {
+    margin-right: 10px;
+    /*width: auto;*/
+}
+
+main {
+    width: 90%;
+    order: 3;
+    order: 3;
+    margin-top: 10px;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.images {
+    margin-top: 10px;
+    width: 33%;
+}
+
+img {
+    box-shadow: 5px 5px 5px #ccc;
+    border: 1px solid #fff;
+}
+
+.logo img {
+    box-shadow: none;
+    border: none;
+}
+
+.cover-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+h1, h3 {
+    text-transform: uppercase;
+    text-align: right;
+    font-weight: normal;
+}
+
+h2 {
+    font-weight: normal;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.box1 {
+    background-color: paleturquoise;
+    width: auto;
+    height: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.box2 {
+    background-color: darkolivegreen;
+    width: auto;
+    height: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.box3 {
+    background-color: chocolate;
+    width: auto;
+    height: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+/* Responsive design with @media */
+@media screen and (min-width: 0px) and (max-width: 750px) {
+    h1, h2, h3 {
+        font-size: 1em;
+    }
+
+    p {
+        font-size: 0.5em;
+    }
+
+    aside {
+        width: 100%;
+        order: 2;
+    }
+
+    main {
+        width: 100%;
+        order: 3;
+    }
+
+    .images {
+        width: 100%;
+    }
+
+    .page-header {
+        margin-left: 0%;
+    }
+
+    .portfolio {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1400px) {
+    h1, h2, h3 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 0.8em;
+
+    }
+
+    header {
+        max-height: 150px;
+    }
+}
