@@ -1,12 +1,14 @@
 
-html, body {
+html,
+body {
     height: 100%;
     width: 100%;
 }
 
 body {
     margin: 0;
-    font-family: 'Work Sans', sans-serif;
+    /*double quotation marks*/
+    font-family: "Work Sans", sans-serif;
 }
 
 .container {
@@ -67,9 +69,11 @@ img {
     border: 1px solid #fff;
 }
 
-.logo img {
+.logo {
     box-shadow: none;
     border: none;
+    max-height:100px;
+    max-width: 100%;
 }
 
 .cover-img {
@@ -77,8 +81,12 @@ img {
     height: 250px;
     object-fit: cover;
 }
+.bikes {
+    width:100%;
+}
 
-h1, h3 {
+h1,
+h3 {
     text-transform: uppercase;
     text-align: right;
     font-weight: normal;
@@ -126,7 +134,9 @@ a {
 
 /* Responsive design with @media */
 @media screen and (min-width: 0px) and (max-width: 750px) {
-    h1, h2, h3 {
+    h1,
+    h2,
+    h3 {
         font-size: 1em;
     }
 
@@ -158,7 +168,9 @@ a {
 }
 
 @media screen and (min-width: 750px) and (max-width: 1400px) {
-    h1, h2, h3 {
+    h1,
+    h2,
+    h3 {
         font-size: 1.5em;
     }
 
